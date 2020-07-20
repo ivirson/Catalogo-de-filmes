@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>{{ alerta.titulo }}</h1>
+<div mat-dialog-content>
+    <p>{{ alerta.descricao }}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button 
+            [color]="alerta.corBtnSucesso"
+            [mat-dialog-close]="true" 
+            cdkFocusInitial>
+        {{ alerta.btnSucesso }}
+    </button>
+    <button mat-button *ngIf="alerta.possuiBtnFechar"
+            [color]="alerta.corBtnCancelar" 
+            [mat-dialog-close]="false">
+        {{ alerta.btnCancelar }}
+    </button>
+</div>
