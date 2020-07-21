@@ -119,16 +119,6 @@
       "urlIMDb": "https://www.imdb.com/title/tt9484998/?ref_=hm_fanfav_tt_3_pd_fp1",
       "genero": "Romance",
       "id": 12
-    },
-    {
-      "titulo": "teste",
-      "urlFoto": "",
-      "dtLancamento": "2020-07-21T03:00:00.000Z",
-      "descricao": "teste\nteste\nteste\nteste",
-      "nota": 10,
-      "urlIMDb": "",
-      "genero": "Ficção científica",
-      "id": 13
     }
   ]
 }

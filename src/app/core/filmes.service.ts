@@ -19,6 +19,10 @@ export class FilmesService {
     return this.http.post<Filme>(url, filme);
   }
 
+  public editar(filme: Filme): Observable<Filme> {
+    return this.http.put<Filme>(url + filme.id, filme);
+  }
+
   public listar(config: ConfigParams): Observable<Filme[]> {
     const configParams = this.configParamsService.configurarParams(config);
     return this.http.get<Filme[]>(url, {params: configParams});
@@ -26,5 +30,9 @@ export class FilmesService {
 
   public visualizar(id: number): Observable<Filme> {
     return this.http.get<Filme>(url + id);
+  }
+
+  public excluir(id: number): Observable<void> {
+    return this.http.delete<void>(url + id);
   }
 }
